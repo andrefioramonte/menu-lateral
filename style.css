@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #000000;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    padding: 40px 0 40px 1%;
+    background-color: #000000;
+    box-shadow: 3px 0 0 #03f3f3;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5S;
+}
+
+nav.menu-lateral.expandir{
+    width: 300PX;
+}
+
+.btn-expandi{
+    width: 100%;
+    padding-left:10px;
+    margin-bottom: 30px;
+}
+
+.btn-expandi >i{
+    color: #3797eb;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 0.6s;
+}
+
+ul li.ativo{
+    background-color: #03f3f3;
+}
+
+ul li.item-menu:hover{
+    background: #03f3f3;
+}
+
+
+ul li.item-menu a{    
+    color: #3797eb;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 30px;
+    line-height: 45px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: 0.6s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin: left 40px;
+    opacity: 1;
+}
+ul li.item-menu a .icon > i{
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
